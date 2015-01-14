@@ -13,11 +13,24 @@ class HomeController extends BaseController {
 	|
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
-	*/
+	 */
 
-	public function showWelcome()
-	{
+	public function showWelcome() {
 		return View::make('hello');
+	}
+
+	public function login() {
+		$credentials = array(
+			'email' => 'test@example.com',
+			'password' => 'test',
+		);
+		// Try to authenticate the user
+		$user = Sentry::authenticate($credentials, false);
+		If ($user) {
+			echo "You are logged in!";
+		} else {
+			echo "no";
+		}
 	}
 
 }
