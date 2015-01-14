@@ -1,0 +1,17 @@
+{
+  "name": "lovejog",
+  "version": "1.0.0",
+  "homepage": "https://github.com/linuxwit/lovejog",
+  "authors": [
+    "zhangzhibo <linxuwit@gmail.com>"
+  ],
+  "description": "a site about jog",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
