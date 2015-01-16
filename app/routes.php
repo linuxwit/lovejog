@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 Route::get('register', array('as' => 'postregister', 'uses' => 'PassportController@register'));
 Route::get('myaccount', array('as' => 'myaccount', 'uses' => 'PassportController@myaccount'));
+
+Route::get('hello', function () {
+	return View::make('index');
+});
