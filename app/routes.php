@@ -12,7 +12,7 @@
  */
 
 Route::get('/', function () {
-	return View::make('hello');
+	return View::make('index');
 });
 Route::get('register', array('as' => 'postregister', 'uses' => 'PassportController@register'));
 Route::get('myaccount', array('as' => 'myaccount', 'uses' => 'PassportController@myaccount'));
